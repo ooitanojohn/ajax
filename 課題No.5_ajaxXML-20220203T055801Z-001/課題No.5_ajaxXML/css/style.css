@@ -1,0 +1,61 @@
+/*下記、初期スタイリング*/
+*{
+	margin:0px;
+	padding:0px;
+}
+#sample{
+	width:900px;
+	padding:20px;
+	background-color:#CCC;
+	margin:0 auto;
+	border-radius:10px;
+	overflow:hidden;
+}
+#btn{
+	width:200px;
+	background-color:#06F;
+	border:0px;
+	color:#FFF;
+	font-size:1em;
+	padding:10px;
+	border-radius:3px;
+}
+#head h1{
+	float:left;
+	margin-right:20px;
+	margin-left:30%;
+	color:#999;
+}
+#head{
+	margin:0 auto;
+	overflow:hidden;
+	margin-top:20px;
+	height:80px;
+	line-height:80px;
+	margin-bottom:30px;
+}
+
+/*１）以下、参考セレクタ（この通りである必要はありません）*/
+/*２）idやclassはjsにて構造を出力する上で作成しています。コチラもこの通りである必要はありません*/
+/*３）以下以外に好きに設定しても問題ありません*/
+#item{
+
+}
+h2{
+
+}
+p{
+
+}
+.release{
+
+}
+img{
+
+}
+.rankNo{
+
+}
+a{
+
+}
