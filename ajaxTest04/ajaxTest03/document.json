@@ -1,0 +1,28 @@
+{
+    "recomendItem" : [
+        {
+            "itemName" : "カシミヤウールVネック",
+            "itemPrice" : "¥29,808",
+            "itemManu" : "UNITED TOKYO",
+            "itemImg" : "img/photos/item1.jpg"
+        },
+        {
+            "itemName" : "リバーシブルシープボアフリース",
+            "itemPrice" : "¥3,996",
+            "itemManu" : "MONO-MART",
+            "itemImg" : "img/photos/item2.jpg"
+        },
+        {
+            "itemName" : "BE@RBRICK XLARGE(R)",
+            "itemPrice" : "¥54,000",
+            "itemManu" : "BE@RBRICK",
+            "itemImg" : "img/photos/item3.jpg"
+        },
+        {
+            "itemName" : "ドクターマーチン 146",
+            "itemPrice" : "¥20,412",
+            "itemManu" : "Dr.Martens",
+            "itemImg" : "img/photos/item4.jpg"
+        }
+    ]
+}

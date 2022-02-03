@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>jQuery復習・html読み込み（非同期）</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <form>
+        <label for="name">name</label>
+        <input type="name" id="name" />
+        <label for="age">age</label>
+        <input type="age" id="age" />
+        <button type="button">送信</button>
+      </form>
+      <p>name:<span></span></p>
+    </div>
+    <div id="boxTop">
+      <!--==========boxTopLeft==========-->
+      <div id="boxTopLeft">
+        <p id="button01">ボタン2022</p>
+      </div>
+      <!--boxTopLeft-->
+      <!--==========boxTopRight==========-->
+      <div id="boxTopRight">
+        <h2>結果表示</h2>
+        <div id="sample01">
+          <h3>ここにload.htmlが入ります</h3>
+          <p>ここです。</p>
+        </div>
+        <!--sample01-->
+      </div>
+      <!--boxTopRight-->
+    </div>
+    <!--boxTop-->
+    <div id="boxAll">
+      <!--=========box1=========-->
+      <div id="box1">
+        <select name="test">
+          <option value="choice">選択</option>
+          <option value="page1">ページ１</option>
+          <option value="page2">ページ２</option>
+          <option value="page3">ページ３</option>
+        </select>
+      </div>
+      <!--box1-->
+      <!--=========box2=========-->
+      <div id="box2">
+        <h2>結果表示</h2>
+        <div id="box2In"></div>
+        <!--box2In-->
+      </div>
+      <!--box2-->
+    </div>
+    <!--boxAll-->
+  </body>
+  <script src="js/jquery-2.0.2.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/restful.js"></script>
+</html>

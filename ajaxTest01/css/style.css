@@ -1,0 +1,44 @@
+/*全画面表示スタイリング*/
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+/*画面基本構成スタイリング*/
+#boxTop{
+	height:30%;
+	border-bottom:solid #FF0004 1px;
+}
+#boxAll{
+	height:70%;
+}
+
+/*各エリア（boxTop/boxAll）スタイリング*/
+/*==boxTop==*/
+#boxTopLeft{
+	width:20%;
+	float:left;
+}
+#boxTopRight{
+	width:80%;
+	float:left;
+}
+
+/*==boxAll==*/
+#box1 {
+	width: 30%;
+	float: left;
+}
+#box2 {
+	width: 70%;
+	float: left;
+}
+
+/*読み込みhtmlスタイリング*/
+#loadWrap,#pageWrap{
+	padding:15px;
+	background-color:pink;
+}
+#pageWrap {
+	background-color: skyblue;
+}
