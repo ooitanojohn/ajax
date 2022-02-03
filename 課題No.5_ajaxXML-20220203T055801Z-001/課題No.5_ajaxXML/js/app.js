@@ -1,6 +1,7 @@
 $(function () {
   $("#btn").on("click", function () {
     // #sample h2を消す
+    $("#sample h2").remove();
     $("#sample #item").remove();
     // xmlの要素取得
     $.ajax({
@@ -26,10 +27,10 @@ $(function () {
             $("#sample").append('<div id="item"></div>');
             //  no
             $("#sample #item:nth-of-type(" + i + ")").append(
-              '<div class="rankNo">' + "No" + i + "</div>"
+              '<div class="rankNo">' + "No." + i + "</div>"
             );
             //   url
-            $("#sample #item:nth-of-type(" + i + ") h2")
+            $("#sample #item:nth-of-type(" + i + ")")
               .append(
                 "<h2><a href='" +
                   $(this).find("url").text() +
