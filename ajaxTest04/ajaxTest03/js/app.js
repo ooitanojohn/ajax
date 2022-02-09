@@ -1,46 +1,31 @@
 console.log("jQuery");
 $(function () {
+  /* JSONファイル
+  jsonフォーマットで記述された、テキスト形式のファイル。
+  jsonとはJavaScript Object Notationの略でジェイソンと読んでいます。
+  jsonはJavaScriptで定義されているオブジェクト表記法の一つで、
+  テキスト形式で表記されるので、簡単にデータ交換が出来ます。
+  そのためJavaScriptに限らず、主要なプログラム言語から利用されています。*/
+
+  // オブジェクトの扱い方の復習
+  let subject = {
+    class: "IW21",
+    time: "5限目",
+  };
+  console.log(subject.class);
   /* JSONを表示させる その1 */
   $("#button01").on("click", function () {
-    console.log("click");
     $.ajax({
-      url: "sample34.xml",
-      datatype: "xml",
+      url: "document.json",
+      datatype: "json",
     })
-      .done(function (xml) {
-        console.log(xml);
-        //  findメソッド あるタグ内の子孫要素を選択する為のメソッド
-        console.log($(xml).find("sample"));
-        console.log($(xml).find("title").text());
-        console.log($(xml).find("url").text());
-
-        // eqメソッド 複数のHTML要素の中からインデックス番号を指定する事で特定の要素だけを指定できます
-        console.log($(xml).find("title").eq(1).text());
-
-        // eachメソッド
-        // 要素に対する繰り返し処理が出来る
-        $(xml)
-          .find("sample")
-          .each(function () {
-            //  append メソッド
-            // 対象の要素の中の最後に要素を追加
-            $("#sample ul").append("<li>取得</li>");
-            //  1) <title>を取得
-            $("#sample2 ul").append(
-              "<li>" + $(this).find("title").text() + "</li>"
-            );
-            //  2) <url>を取得
-            $("#sample3 ul")
-              .append(
-                "<li><a>リンク</a>" + $(this).find("url").text() + "</li>"
-              )
-              .attr("href");
-          });
+      .done(function (json) {
+        // 実際にデータが取れているか？
+        // どういう構造になっているか？
+        console.log(json);
       })
-      .fail(function () {
-        alert("失敗。。");
-        // fail
-      });
+      .fail(function () {});
   });
   /* JSONを表示させる その2 */
-}); //function
+});
+//function
